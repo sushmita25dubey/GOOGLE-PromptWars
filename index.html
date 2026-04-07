@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartEvent AI Assistant</title>
+    <meta name="description" content="Complex AI Assistant for Smart Event Management">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <h1>SmartEvent Navigator System</h1>
+        </header>
+
+        <section class="crowd-status-section">
+            <div class="status-header">
+                <h2>Real-Time Gates Status</h2>
+                <span class="last-updated" id="last-updated-time">Last updated 0 seconds ago</span>
+            </div>
+            <div class="gates-container" id="gates-container"></div>
+
+            <div class="recommendation-box">
+                <span class="rec-label">⭐ Recommended Gate:</span>
+                <span class="rec-value" id="rec-gate-value">Calculating...</span>
+            </div>
+        </section>
+
+        <section class="insights-section">
+            <div class="insights-header">
+                <h2>Management Insights</h2>
+                <span class="insights-summary" id="insights-summary">Total congested: 0</span>
+            </div>
+            <ul class="insights-list" id="insights-list">
+                <li class="insight-item">Gathering data...</li>
+            </ul>
+        </section>
+
+        <section class="chat-section">
+            <div class="chat-window" id="chat-window">
+                <div class="message bot-message">
+                    Welcome to the SmartEvent Decision Engine! Are you in a <strong>hurry</strong>, looking to
+                    <strong>avoid crowds</strong>, or seeking a <strong>queue prediction</strong>? I monitor wait times
+                    and handle routing intelligently.
+                </div>
+            </div>
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="e.g., I'm in a hurry or Crowds?"
+                    aria-label="Type your message">
+                <button id="send-btn" aria-label="Send Message">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="send-icon">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
