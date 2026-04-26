@@ -5,7 +5,7 @@
 ---
 
 🌐 **Live Demo:**
-👉 https://sushmita25dubey.github.io/GOOGLE-PromptWars/
+👉 https://sushmita25dubey.github.io/GOOGLE-PromptWars-Challenge-1/
 
 ---
 
